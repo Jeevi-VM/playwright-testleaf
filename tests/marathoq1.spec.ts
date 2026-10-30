@@ -17,8 +17,8 @@ test("advance level Xpath",async({page})=>{
     await page.locator("//span[contains(text(),'Sun')]").click()
     //await page.getByRole('listbox').getByText('CRAZY KALYANAM').click()
     //await page.getByText('CRAZY KALYANAM', { exact: true }).click();
-    await page.locator("//li[@role='option']//span[normalize-space()='CRAZY KALYANAM']").click()
-    await page.locator("//span[contains(text(),'PM')]").click()
+    await page.locator("//li[@role='option']//span[normalize-space()='HAIKU']").click()
+    await page.locator("(//span[contains(text(),'PM')])[2]").click()
     await page.getByRole('button', { name: 'Submit' }).click()
     await page.getByRole('button', { name: 'Accept' }).click()
     await page.locator("(//span[contains(@id,'F')])[5]").click()

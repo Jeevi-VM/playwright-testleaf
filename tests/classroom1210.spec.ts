@@ -5,6 +5,8 @@ test('learn basic Xptha',async({page})=>{
     await page.locator("(//input[@class='inputLogin'])[2]").fill("crmsfa")
     await page.locator("//input[contains(@type,'submit')]").click()
     await page.locator("//a[normalize-space()='CRM/SFA']").click()
+
+    //await page.goto('https://www.pvrcinemas.com/')
 }
 
 )
